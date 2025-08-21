@@ -1,0 +1,23 @@
+.mic-button {
+    background-color: #33b664;
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    padding: 12px 2px;
+    box-shadow: 0 2px #3e8e41;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-size: 28px;
+  }
+  
+  .mic-button:hover {
+    background-color: #45a049;
+  }
+  
+  .mic-button:active {
+    box-shadow: 0 1px #3e8e41;
+    transform: translateY(2px);
+  }
+  
+  

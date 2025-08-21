@@ -1,5 +1,4 @@
-import "../index.css";
-
+import "../styles/MicButton.css";
 
 function MicButton() {
   return <button className="mic-button">🎤 </button>;
