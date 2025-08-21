@@ -3,14 +3,15 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import Header from './components/Header'
-import MicButton from './components/MicButton'
+import ChatBox from './components/ChatBox'
 
 function App() {
 
   return (
     <div>
       <Header/>
-      <MicButton/>
+      <ChatBox/>
+
       
     </div>
   )
