@@ -1,5 +1,5 @@
 export default function Header () {
 
-    return <h1>Welcome to my Language Learning Chatbot! :P </h1>
+    return <h1 className="header">Welcome to my Language Learning Chatbot! </h1>
 
 }

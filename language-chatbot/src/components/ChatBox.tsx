@@ -2,6 +2,8 @@ import "../styles/ChatBox.css";
 import MicButton from "./MicButton";
 
 function ChatBox() {
+
+  
   return (
     <div className="chat-container">
       <div className="chatbox">
@@ -12,3 +14,5 @@ function ChatBox() {
 }
 
 export default ChatBox;
+
+
