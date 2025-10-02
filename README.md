@@ -17,15 +17,21 @@ This project relies on the following dependencies:
 1. Clone the repository and navigate to the root folder of the project
 2. Intall dependencies using:
 
-``` npm install ```
+``` 
+npm install
+```
 
 3. Start the developent server:
 
-``` npm run dev ```
+``` 
+npm run dev
+ ```
 
 4. Open browser and navigate to:
 
-```http://localhost:5173/ ```
+```
+http://localhost:5173/
+```
 
 
 
