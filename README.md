@@ -1,4 +1,4 @@
-# Multiligual Live Transcriber (MLT)
+# Multilingual Live Transcriber (MLT)
 
 MLT is a real-time speech-to-text tool that allows users to transcribe audio in multiple languages. It captures and transcribes audio instantly, making it ideal for language learning, live events, or as an accessibility tool. 
 
