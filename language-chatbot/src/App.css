@@ -44,7 +44,7 @@ html, body {
 }
 
 
-.toggle-button {
+.button {
   margin-top: 1.5rem;
   background-color: #3a4920; 
   color: #ffffff;
@@ -56,11 +56,20 @@ html, body {
   transition: background-color 0.25s ease, transform 0.15s ease;
 }
 
-.toggle-button:hover {
+.button:hover {
   background-color: #6b8e23; 
   transform: translateY(-2px);
 }
 
-.toggle-button:active {
+.button:active {
   transform: translateY(0);
 }
+
+.buttons {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  gap: 1rem; 
+  margin-top: 1.5rem; 
+}
+

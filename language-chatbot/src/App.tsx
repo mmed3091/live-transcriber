@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useRef } from "react";
 import "./App.css";
+import { downloadFile } from "./utils/downloadUtils";
 
 function App() {
   const apiKey = import.meta.env.VITE_API_KEY;
@@ -29,7 +30,7 @@ function App() {
         mediaRecorderRef.current = mediaRecorder;
 
         const socket = new WebSocket(
-          "wss://api.deepgram.com/v1/listen?language=multi&model=nova-3", // create a new Websocket conncetion to the server at the URL
+          "wss://api.deepgram.com/v1/listen?language=multi&model=nova-3", // create a new Websocket connection to the server at the URL
           [
             "token", // subprotocols
             apiKey,
@@ -61,24 +62,29 @@ function App() {
         console.error("Failed to start transcription", err);
       }
     }
+
   };
 
   return (
     <div className="app">
       <h1 className="header">Multilingual Live Transcriber</h1>
+
       <div className="transcript-box">
         {transcript ||
           (isTranscribing ? "Listening..." : "Click the button to begin")}
       </div>
 
-      <button onClick={handleTranscriptionToggle} className="toggle-button">
-        {isTranscribing ? "Stop Transcription" : "Begin Transcription"}
-      </button>
+      <div className="buttons">
+        <button onClick={handleTranscriptionToggle} className="button">
+          {isTranscribing ? "Stop Transcription" : "Begin Transcription"}
+        </button>
 
-      {/* <div className="transcript-box">
-        {transcript ||
-          (isTranscribing ? "Listening..." : "Click the button to begin")}
-      </div> */}
+        <button
+          onClick={ ()=> downloadFile(transcript, "transcript.txt", "text/plain")}
+          className="button">
+          Download Transcript
+        </button>
+      </div>
     </div>
   );
 }
