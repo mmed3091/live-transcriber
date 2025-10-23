@@ -65,16 +65,20 @@ function App() {
 
   return (
     <div className="app">
-      <h1 className="header">Welcome to my Language Learning Chatbot!</h1>
+      <h1 className="header">Multilingual Live Transcriber</h1>
+      <div className="transcript-box">
+        {transcript ||
+          (isTranscribing ? "Listening..." : "Click the button to begin")}
+      </div>
 
       <button onClick={handleTranscriptionToggle} className="toggle-button">
         {isTranscribing ? "Stop Transcription" : "Begin Transcription"}
       </button>
 
-      <div className="transcript-box">
+      {/* <div className="transcript-box">
         {transcript ||
           (isTranscribing ? "Listening..." : "Click the button to begin")}
-      </div>
+      </div> */}
     </div>
   );
 }
