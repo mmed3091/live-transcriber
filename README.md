@@ -27,7 +27,7 @@ MLT is a real-time speech-to-text tool that allows users to transcribe audio in 
 2. Audio is streamed to Deepgram via WebSockets in real-time
 3. Deepgram transcribes the speech into text and sends it back to the client
 4. The transcription is displayed live in the UI
-5. User can export the transcription using the provided button as a text file
+5. User can export the transcription using the provided button 
 
 
 
